@@ -1,18 +1,15 @@
 package com.example.demohometask.user.dto;
 
-import com.example.demohometask.user.entity.Role;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import jakarta.validation.constraints.NotBlank;
+import lombok.Getter;
+import lombok.Setter;
 
-@AllArgsConstructor
-@NoArgsConstructor
-@Data
-public class UserCreateDto {
-    private String firstName;
-    private String lastName;
-    private String phoneNumber;
-    private String email;
+
+@Getter
+@Setter
+public class UserCreateDto extends UserBaseDto {
+
+    @NotBlank(message = "auth.user.password.required")
     private String password;
-    private Role role;
+
 }

@@ -14,3 +14,6 @@ spring:
         show_sql: true
     hibernate:
       ddl-auto: update
+security:
+  jwt:
+    key: WC+qbHYl2B0o02421L+2UayDp2LtczY/3cSkAyErfTjmcEOXNtyjXq0un/SdY4cw

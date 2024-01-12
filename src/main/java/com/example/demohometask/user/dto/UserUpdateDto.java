@@ -1,17 +1,12 @@
 package com.example.demohometask.user.dto;
 
-import com.example.demohometask.user.entity.Role;
 import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 
+@Getter
+@Setter
 @AllArgsConstructor
-@NoArgsConstructor
-@Data
-public class UserUpdateDto {
-    private String firstName;
-    private String lastName;
-    private String phoneNumber;
-    private String email;
-    private Role role;
+public class UserUpdateDto extends UserBaseDto {
+
 }
